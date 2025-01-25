@@ -4,35 +4,122 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Reto_07-Perfume</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #f3eae3;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            height: 100%;
+        }
+        section {
+            display: flex;
+        }
+
+        section img {
+            width: 400px;
+            border-radius: 16px 0px 0px 16px;
+        }
+
+        .producto {
+            width: 400px;
+            padding: 40px;
+            border-radius: 0px 16px 16px 0px;
+            background-color: #ffffff;
+        }
+
+        #perfume {
+            font-family: "Montserrat";
+            font-weight: 500px;
+            letter-spacing: 5px;
+        }
+        .producto h1 {
+            font-family: "Fraunces";
+            font-size: 65px;
+            font-weight: 500px;
+        }
+
+        .producto p {
+            font-family: "Montserrat";
+            font-size: 20px;
+            font-weight: 700px;
+            color: #9a9aa1;
+        }
+
+        #precio {
+            display: flex;
+            margin-right: 15px;
+            color: #538e78;
+            align-items: center;
+        }
+
+        #precio h2 {
+            font-family: "Fraunces";
+            margin-right: 15px;
+            font-size: 50px;
+        }
+
+        #precio p {
+            font-family: "Montserrat";
+            font-size: 20px;
+            text-decoration: line-through;
+            line-height: normal;
+
+        }
+
+        button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #3d8168;
+            width: 100%;
+            height: 55px;
+            border: none;
+            border-radius: 10px;
+
+
+            color: white;
+            text-align: center;
+            font-family: "Montserrat";
+            font-size: 18px;
+            font-weight: 900px;
+        }
+
+
+
+        #carrito {
+            width: 20px;
+            margin-right: 20px;
+        }
+
+        
+
+    </style>
   </head>
   <body>
     <section>
       <img src="imagenes/image-product-desktop.jpg" alt="Producto" />
-      <div>
-        <span>PERFUME</span>
+      <div class="producto">
+        <span id="perfume">PERFUME</span>
         <h1>Gabrielle Essence Eau De Parfum</h1>
         <p class descripcion>
           A floral, solar and voluptuous interpretation composed by Olivier
           Polge, Perfumer-Creator for the House of CHANEL
         </p>
-        <div>
+        <div id="precio">
           <h2>$149.99</h2>
           <p>$169.99</p>
         </div>
         <button>
-          <img src="imagenes/icon-cart.svg" alt="Carrito de compras" />
+          <img id="carrito"  src="imagenes/icon-cart.svg" alt="Carrito de compras" />
           Add to Cart
         </button>
       </div>
